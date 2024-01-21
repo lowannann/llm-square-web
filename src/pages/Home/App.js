@@ -1,4 +1,5 @@
 import './App.css';
+
 import Header from './components/Header';
 import Card from './components/Card';
 import About from './components/About';
@@ -14,6 +15,7 @@ const App = () =>{
         <div className="App">
 
             <Header/>
+
 
             <div className='content-1'>
                 <section className="hero">
