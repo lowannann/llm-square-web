@@ -1,7 +1,5 @@
 import '../App.css';
-import Bars from './Bars';
-
-
+import Nav from './Nav';
 
 const Header = () =>{
     return(
@@ -13,7 +11,7 @@ const Header = () =>{
                         <img srcSet='https://assets-global.website-files.com/64a66a91acab043566a519f9/64afd7cc9e75bbdb41f8ea1e_Header%20Logo.png' loading="lazy" alt="logo" style={{ width: '258px', height: '50.78px' }}>
                         </img>
                 </a>
-                    <Bars />
+                    <Nav />
                 </div>
             </div>
             <div className='w-nav-overlay' data-wf-ignore id="w-nav-overlay-0" ></div>
