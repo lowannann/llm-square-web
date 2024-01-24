@@ -1,29 +1,14 @@
-import './App.css';
+import About from "../components/About";
+import Description from "../components/Description";
+import Plan from "../components/Plan";
+import Footer from "../components/Footer";
 
-import Header from './components/Header';
-import Card from './components/Card';
-import About from './components/About';
-import Description from './components/Description';
-import Plan from './components/Plan';
-import Footer from './components/Footer';
-
-
-
-
-const App = () =>{
+const AboutUs = () =>{
     return( 
-        <div className="App">
-
-            <Header/>
-
+        <div >
 
             <div className='content-1'>
-                <section className="hero">
-                    <div className="content">
-                        <Card />
-                    </div>
 
-                </section>
 
                 <section className="section-2 beigebg">
                     <About />
@@ -60,9 +45,8 @@ const App = () =>{
             <section className='footer'>
                 <Footer/>
             </section>
-        </div>
-    );
+        </div>    );
 
 }
 
-export default App
+export default AboutUs
