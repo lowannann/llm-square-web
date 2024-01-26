@@ -1,7 +1,7 @@
 import '../App.css';
 import { Link } from 'react-router-dom';
 
-const Nav=()=>{
+const Navigation=()=>{
     return(
         <div className="navigation">
         <input type="checkbox" className="navigation__checkbox" id="nav-toggle" />
@@ -29,10 +29,10 @@ const Nav=()=>{
                   </div>
 
                   <div className='menu-open-links'>
-                    <a href='https://github.com/lowannann/llm-square-web' title='PROJECT 01' className='navigation__link'>
-                      <h2>PROJECT 01</h2>
-                      <h3>關於計畫團隊</h3>
-                    </a>
+                    <Link to='/step01' title='STEP01' className='navigation__link'>
+                      <h2>STEP 01</h2>
+                      <h3>數據收集和預處理</h3>
+                    </Link>
                     <div className='menu-item-links navigation__link'>
                       <a title='計畫願景' className='menu-open-link'>計畫願景</a>
                       <a title='團隊介紹' className='menu-open-link'>團隊介紹</a>
@@ -100,4 +100,4 @@ const Nav=()=>{
     )
 }
 
-export default Nav
+export default Navigation

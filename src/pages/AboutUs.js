@@ -5,13 +5,24 @@ import Footer from "../components/Footer";
 import CardItem from "../components/CardItem";
 import CardItemContent from "../components/CardItemContent";
 import ContactInfoContent from "../components/ContactInfoContent";
+import Nav from 'react-bootstrap/Nav';
+import Header from "../components/Header";
 
 const AboutUs = () =>{
+        const go =[
+            {to:'#vision', to_where:'計畫願景'},
+            {to:'#our_team', to_where:'團隊介紹'},
+            {to:'#contact_info', to_where:'聯絡資訊'},
+            {to:'#contact_us', to_where:'聯絡我們'}
+        ];    
+
     return( 
         <div >
+            <Header go={go}/>
 
             <div className='content-1'>
-                <section className="section-2 beigebg">
+
+                <section id='vision' className="section-2 beigebg">
                     <div className="horizontal-area mobile-switch">
                         <div className='text-container left'>
                             <div className='title-area left'>
@@ -24,7 +35,7 @@ const AboutUs = () =>{
                     </div>
                 </section>
 
-                <section className="section-2 whitebg">
+                <section id='our_team' className="section-2 whitebg">
                     <div className="vertical-area">
                         <div className="text-container center">
                             <div className="title-area">
@@ -46,7 +57,7 @@ const AboutUs = () =>{
                     </div>
                 </section>
 
-                <section id='contact-info' className="section-2 beigebg">
+                <section id='contact_info' className="section-2 beigebg">
                     <div className='horizontal-area'>
                         <div className='text-container lef'>
                             <div className='title-area left'>
@@ -67,7 +78,7 @@ const AboutUs = () =>{
                     </div>
                 </section>
 
-                <section className="section-2 greybg">
+                <section id='contact_us' className="section-2 greybg">
                     <div className="vertical-area">
                         <div className="text-container center">
                             <div className="title-area whitecolor">

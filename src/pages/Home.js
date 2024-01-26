@@ -5,6 +5,7 @@ import About from '../components/About';
 import Description from '../components/Description';
 import Plan from '../components/Plan';
 import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 
 
@@ -12,7 +13,7 @@ import Footer from '../components/Footer';
 const Home = () =>{
     return( 
         <div >
-
+            <Header/>
             <div className='content-1'>
                 <section className="hero">
                     <div className="content">

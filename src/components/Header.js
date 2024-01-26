@@ -1,8 +1,9 @@
 import '../App.css';
-import Nav from './Nav';
+import Navigation from './Navigation';
 import { Link } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav'
 
-const Header = () =>{
+const Header = ({go=[]}) =>{
     return(
         <div className='header w-nav'>
             <div className="container-regular">
@@ -11,13 +12,18 @@ const Header = () =>{
                             <img srcSet='https://assets-global.website-files.com/64a66a91acab043566a519f9/64afd7cc9e75bbdb41f8ea1e_Header%20Logo.png' loading="lazy" alt="logo" style={{ width: '258px', height: '50.78px' }}>
                             </img>
                     </Link>
-                    <Nav />
+
+                    <Navigation />
                 </div>
+
             </div>
+            <div  className="page-anchor">
+                {go && go.map((item)=>(
+                <Nav.Link href={item.to}>{item.to_where}</Nav.Link>
+                ))}
+            </div>    
             <div className='w-nav-overlay' data-wf-ignore id="w-nav-overlay-0" ></div>
-            <div className="page-anchor">
-                    <a href="#contact-info">hihi</a>
-                </div>
+
         </div>
     )
 };

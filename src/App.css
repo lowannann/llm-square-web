@@ -9,6 +9,15 @@
 
 
 
+body {
+    color: #333;
+    font-family: Noto Sans TC, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
 .header {
     z-index: 20;
     width: 100%;
@@ -375,6 +384,11 @@ p{
     display: inline-block;
 }
 
+.w--current {
+    color: #fff;
+    background-color: #323232;
+}
+
 .featured-image {
     width: 50%;
 }
@@ -481,7 +495,7 @@ p{
     height: 40px;
     grid-column-gap: 16px;
     background-color: #f8f7f3;
-    border-bottom: 1px solid rgba(50, 50, 50, .5);
+    /*border-bottom: 1px solid rgba(50, 50, 50, .5);*/
     justify-content: center;
     align-items: center;
     display: flex;
@@ -589,6 +603,25 @@ p{
     align-items: flex-start;
     padding: 16px 24px;
     display: grid;
+}
+
+.project-title {
+    width: 90%;
+    max-width: 1400px;
+    border-bottom: 1px solid rgba(50, 50, 50, .5);
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 32px;
+    display: flex;
+    margin-left: auto;  /* 新增左外边距自动 */
+    margin-right: auto; /* 新增右外边距自动 */
+}
+
+.project-tab-list {
+    grid-column-gap: 8px;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
 }
 
 .leader-title {

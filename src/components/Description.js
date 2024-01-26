@@ -25,7 +25,7 @@ const Description=()=>{
                                 </h3>
                             </div>
                             <div className='two-columns'>
-                                <CardItemContent num='1' step='"數據收集和預處理"' description='協調、蒐集並清理豐富的台灣法律文本數據，用於訓練和驗證模型。' link='#'/>
+                                <CardItemContent num='1' step='"數據收集和預處理"' description='協調、蒐集並清理豐富的台灣法律文本數據，用於訓練和驗證模型。' link='/step01'/>
                                 <CardItemContent num='2' step='"模型訓練和優化"' description='利用收集的數據和NVIDIA的高效計算資源進行模型的訓練與優化。' link='#'/>
                                 <CardItemContent num='3' step='"驗證和調整"' description='對模型進行深入的驗證測試，並根據實際效果進行必要的調整。將模型應用於實際的法律語境中，並根據用戶反饋進行持續優化。' link='#'/>
 
