@@ -1,4 +1,6 @@
 import '../App.css';
+import { Link } from 'react-router-dom';
+
 
 const CardItemContent = (props) => {
     return(
@@ -12,8 +14,11 @@ const CardItemContent = (props) => {
             </h3>
             <p>{props.description}</p>
         </div>
-        <a href='' title='深入了解' className='button w-button'>深入了解</a>
-        <p></p>
+        {props.link && (
+                <Link to={props.link} title='深入了解' className='button w-button'>
+                    深入了解
+                </Link>
+            )}        <p></p>
     </div>
     )
 }

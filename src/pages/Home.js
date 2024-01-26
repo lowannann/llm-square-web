@@ -25,7 +25,7 @@ const Home = () =>{
                     <About />
                 </section>
 
-                <section className="section-white">
+                <section className="section-2 whitebg">
                     <Description />
                 </section>
 

@@ -15,7 +15,9 @@ const Header = () =>{
                 </div>
             </div>
             <div className='w-nav-overlay' data-wf-ignore id="w-nav-overlay-0" ></div>
-
+            <div className="page-anchor">
+                    <a href="#contact-info">hihi</a>
+                </div>
         </div>
     )
 };

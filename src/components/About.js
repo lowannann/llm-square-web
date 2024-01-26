@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const About = () =>{
     return (
     <div className="horizontal-area mobile-switch">
-        <div className='text-container-left'>
-            <div className='title-area-left'>
+        <div className='text-container left'>
+            <div className='title-area left'>
                 <h2>ABOUT US</h2>
                 <h3>關於計畫團隊</h3>
             </div>
