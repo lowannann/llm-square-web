@@ -5,7 +5,7 @@ const Footer = () =>{
         <div className='footer-container'>
         <div className='footer-wrapper'>
             <div className='footer-brand-area'>
-            <a href="/" title="回到首頁" aria-current="page" className="footer-brand w-inline-block w--current">
+            <a href="/" title="回到首頁" aria-current="page" className="footer-brand w-inline-block w--current02">
                 <img srcSet="https://assets-global.website-files.com/64a66a91acab043566a519f9/64afd83a1ece913c9894c1c4_Footer%20Logo.png" loading="lazy" alt="知識本體、語言處理與人文計算實驗室">
                 </img>
             </a>

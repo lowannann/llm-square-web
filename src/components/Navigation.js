@@ -29,7 +29,7 @@ const Navigation=()=>{
                   </div>
 
                   <div className='menu-open-links'>
-                    <Link to='/step01' title='STEP01' className='navigation__link'>
+                    <Link to='/step01/first' title='STEP01' className='navigation__link'>
                       <h2>STEP 01</h2>
                       <h3>數據收集和預處理</h3>
                     </Link>

@@ -1,12 +1,8 @@
-import '../App.css';
-import Footer from "../components/Footer";
-import CardItem from "../components/CardItem";
-import Header from "../components/Header";
-import { Link } from 'react-router-dom';
+import '../App.css'
+import Button from 'react-bootstrap/Button';
 
 
-
-const Step01 =()=>{
+const Step01_second =()=>{
 
     return(
         <div >
@@ -23,10 +19,10 @@ const Step01 =()=>{
                         </div>
                     </div>
                     <div className='project-tab-list'>
-                    <Link to='#' title='第一步' className='button w-button w--current'>
+                    <Link to='/step01/first' title='第一步' className='button w-button w--current'>
                         第一步
                     </Link>
-                    <Link to='#' title='第二步' className='button w-button w--current'>
+                    <Link to='/step01/second' title='第二步' className='button w-button w--current'>
                         第二步
                     </Link>
                     <Link to='#' title='第三步' className='button w-button w--current'>
@@ -60,4 +56,4 @@ const Step01 =()=>{
         )
 }
 
-export default Step01;
+export default Step01_second;
