@@ -6,6 +6,7 @@ import Description from '../components/Description';
 import Plan from '../components/Plan';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import HomeHeader from '../components/HomeHeader';
 
 
 
@@ -13,16 +14,18 @@ import Header from '../components/Header';
 const Home = () =>{
     return( 
         <div >
-            <Header/>
+            <HomeHeader>
+                <h1>LLM SQUARE</h1>
+            </HomeHeader>
             <div className='content-1'>
-                <section className="hero">
+            <section className="hero">
                     <div className="content">
                         <Card />
                     </div>
 
                 </section>
 
-                <section className="section-2 beigebg">
+                <section className="section-1 beigebg">
                     <About />
                 </section>
 

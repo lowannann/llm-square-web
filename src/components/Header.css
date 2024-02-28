@@ -1,0 +1,22 @@
+
+  .header-title2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  
+      max-width: 90%; /* 限制最大宽度 */
+      white-space: nowrap; /* 防止文本换行 */
+      text-overflow: ellipsis; /* 文本溢出显示省略号 */
+      font-family: "Lucida Console", "Courier New", monospace;
+      font-weight: bold;
+      color: white;
+      font-size: xx-large;
+      /*font-style: italic;*/
+    }
+
+    .w-nav2 {
+        z-index: 1000;
+        background: #C9D8B6;
+        /*position: relative;*/ /*決定是否sticky*/
+    }

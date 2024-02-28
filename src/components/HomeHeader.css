@@ -1,0 +1,43 @@
+/* 動畫 */
+@keyframes sticky-header {
+  from {
+    height: 100vh;
+    font-size: calc(2rem + 8vw);
+  }
+  to {
+    height: 10vh;
+    font-size: 2rem;
+  }
+}
+
+.ani-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #C9D8B6;
+
+    /*background-image: url('https://picsum.photos/id/236/1920/1080');*/
+    background-position: center;
+    background-size: cover;
+    color: white;
+    animation: sticky-header linear 
+    both;
+      animation-timeline: scroll();
+      animation-range: 0vh 100vh;
+    
+  }
+
+.header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 90%; /* 限制最大宽度 */
+    white-space: nowrap; /* 防止文本换行 */
+    text-overflow: ellipsis; /* 文本溢出显示省略号 */
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+
+    /*font-style: italic;*/
+  }

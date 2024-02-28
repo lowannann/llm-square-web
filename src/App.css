@@ -3,7 +3,7 @@
     --grey: #323232;
     --aquamarine: #a1fac5;
     --white: white;
-    --white-smoke: #f8f7f3;
+    --white-smoke: #F1ECC3;
     --link-blue: #06c;
   }
 
@@ -17,30 +17,33 @@ body {
     line-height: 28px;
 }
 
-
+/* header setting */
 .header {
+    position: fixed;
+    top: 0%;    
     z-index: 20;
     width: 100%;
     background-color: rgba(0, 0, 0, 0);
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-    position: fixed;
-    top: 0%;
+
     bottom: auto;
     left: 0%;
     right: 0%;
+
+
 }
 
 .w-nav {
     z-index: 1000;
-    background: #ddd;
-    position: relative;
+    background: #C9D8B6;
+    position: relative; /*決定是否sticky*/
 }
+/* header setting */
 
 .container-regular {
     width: 100%;
-    background-color: #f8f7f3;
     justify-content: center;
     align-items: center;
     margin-left: auto;
@@ -83,7 +86,7 @@ body {
 }
 
 .footer {
-    color: #fff;
+    color: #fefefe;
     background-color: #202020;
     border-bottom: 1px solid #e4ebf3;
     padding: 80px 0;
@@ -209,12 +212,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 body {
     margin: 0;
     padding: 0;
-    background-color: #f8f7f3;
+    background-color: #F1ECC3;
   }
 
 .content-1 {
     min-height: 90vh;
-    background-color: #f8f7f3;
+    background-color: #fefefe;
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
@@ -225,7 +228,7 @@ body {
 
 .section-beige {
     margin: 0;
-    background-color: #f8f7f3;
+    background-color: #fefefe;
     padding: 20px; /* 這裡可以根據需要進行調整 */
     width: 100%; /* 使 section 的寬度與視窗一樣寬 */
 
@@ -234,7 +237,7 @@ body {
 
 .hero {
     width: 100%;
-    background-color: #f8f7f3;
+    background-color: #F1ECC3;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -250,7 +253,20 @@ body {
 }
 
 .section-2.beigebg {
-    background-color: #f8f7f3;
+    background-color: #fff;
+}
+
+.section-1 {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    display: flex;
+
+    margin: auto;
+    margin-top: calc(50vh); 
 }
 
 .section-2 {
@@ -261,10 +277,11 @@ body {
     padding-top: 100px;
     padding-bottom: 120px;
     display: flex;
+
 }
 
 .section-2.whitebg {
-    background-color: #fff;
+    background-color: #C9D8B6;
 }
 
 .greybg {
@@ -273,7 +290,7 @@ body {
 
 
 .card {
-    background-color: white;
+    background-color: 57837B;
     border-radius: 30px;
     /*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);*/
     padding: 15rem;
@@ -419,6 +436,7 @@ p{
     flex-direction: column;
     align-items: flex-start;
     display: flex;
+    margin-top: 5%;
 }
 
 .text-container.orizontal {
@@ -499,7 +517,7 @@ p{
     width: 100%;
     height: 40px;
     grid-column-gap: 16px;
-    background-color: #f8f7f3;
+    background-color: #C9D8B6;
     /*border-bottom: 1px solid rgba(50, 50, 50, .5);*/
     justify-content: center;
     align-items: center;
