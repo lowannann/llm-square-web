@@ -15,9 +15,9 @@ import ntu from '../ntu.png'
 const AboutUs = () =>{
         const go =[
             {to:'#vision', to_where:'計畫願景'},
+            {to:'#sponsors', to_where:'贊助'},
             {to:'#our_team', to_where:'團隊介紹'},
-            {to:'#contact_info', to_where:'聯絡資訊'},
-            {to:'#contact_us', to_where:'聯絡我們'}
+            {to:'#contact_info', to_where:'聯絡資訊'}
         ];    
 
     return( 
@@ -121,7 +121,7 @@ const AboutUs = () =>{
                     </div>
                 </section>
 
-                <section id='contact_us' className="section-2 beigebg">
+                <section id='sponsors' className="section-2 beigebg">
                     <div className="horizontal-area mobile-switch">
                             <div className='text-container left'>
                                 <div className='title-area left'>

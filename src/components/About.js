@@ -1,6 +1,7 @@
 import '../App.css';
 import './About.css';
 import { Link } from 'react-router-dom';
+import llmImage from '../llm_studying.png'
 
 const About = () =>{
     return (
@@ -16,7 +17,8 @@ const About = () =>{
             
             <Link to='/aboutus' className='button w-button'>深入瞭解</Link>
         </div>
-        <img src="https://assets-global.website-files.com/64a66a91acab043566a519f9/64afd88ec265cba5e4e3ab57_About%20Us.png" loading="lazy" srcset="https://assets-global.website-files.com/64a66a91acab043566a519f9/64afd88ec265cba5e4e3ab57_About%2520Us-p-500.png 500w, https://assets-global.website-files.com/64a66a91acab043566a519f9/64afd88ec265cba5e4e3ab57_About%20Us.png 1400w" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, 40vw" alt=" " className="featured-image"/>
+        <img src={llmImage} loading="lazy" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, 40vw" alt=" " className="featured-image"/>
+
     </div>
     );
 }

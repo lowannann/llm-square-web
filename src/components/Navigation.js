@@ -20,10 +20,19 @@ const Navigation=()=>{
                       <h3>關於計畫團隊</h3>
                     </Link>
                     <div className='menu-item-links navigation__link'> 
-                      <a title='計畫願景' className='menu-open-link'>計畫願景</a>
-                      <a title='團隊介紹' className='menu-open-link'>團隊介紹</a>
-                      <a title='聯絡資訊' className='menu-open-link'>聯絡資訊</a>
-                      <a title='聯絡我們' className='menu-open-link'>聯絡我們</a>
+                      <Link to='/aboutus#vision' title='計畫願景' className='menu-open-link'>
+                        計畫願景
+                      </Link>
+                      <Link to='/aboutus#our_team' title='計畫願景' className='menu-open-link'>
+                        團隊介紹
+                      </Link>
+                      <Link to='/aboutus#sponsors' title='贊助' className='menu-open-link'>
+                        贊助
+                      </Link>
+                      <Link to='/aboutus#contact_info' title='聯絡資訊' className='menu-open-link'>
+                        聯絡資訊
+                      </Link>
+
                     </div>
 
                   </div>

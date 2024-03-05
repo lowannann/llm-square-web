@@ -1,10 +1,13 @@
 import '../App.css';
+import './Step01_first.css'
 import Footer from "../components/Footer";
 import CardItem from "../components/CardItem";
 import Header from "../components/Header";
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import dataCuration from '../data_curation.png'
+
 
 
 const Step01_first =()=>{
@@ -61,12 +64,13 @@ const Step01_first =()=>{
                     <div className="horizontal-area mobile-switch">
                         <div className='text-container left'>
                             <div className='title-area left'>
-                                <h2>nono</h2>
-                                <h3>計畫願景</h3>
+                                <h2>Data Curation</h2>
+                                <h3>數據收集</h3>
                             </div>
-                            <p>我們的團隊，是一個結合法律學、語言學、自然語言處理的研究人員組成，幾年來參加司法院與七法法律搜尋引擎(Lawsnote)舉辦的黑客松活動獲得各種不同的獎項。</p>
+                            <p>目前已經蒐集超過十年的司法院判決、判例、解釋；與持續更新的社群語料庫法律相關的貼文 (ptt/D) ，與關鍵詞與構式擷取與處理工具。</p>
                         </div>
-                        <img src="https://assets-global.website-files.com/64a66a91acab043566a519f9/64afd88ec265cba5e4e3ab57_About%20Us.png" loading="lazy" srcset="https://assets-global.website-files.com/64a66a91acab043566a519f9/64afd88ec265cba5e4e3ab57_About%2520Us-p-500.png 500w, https://assets-global.website-files.com/64a66a91acab043566a519f9/64afd88ec265cba5e4e3ab57_About%20Us.png 1400w" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, 40vw" alt=" " className="featured-image"/>
+                        <img src={dataCuration} loading="lazy" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, 40vw" alt=" " className="featured-image"/>
+
                     </div>
                 </section>
 
