@@ -20,3 +20,7 @@
         background: #C9D8B6;
         /*position: relative;*/ /*決定是否sticky*/
     }
+
+.box {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

@@ -6,7 +6,7 @@ import './Header.css';
 
 const Header = ({go=[]}) =>{
     return(
-        <div className='header w-nav2'>
+        <div className='header w-nav2 box'>
             <div className="container-regular">
                 <div className='navbar-wrapper'>
                     <Link to='/' title='回到首頁' className='navbar-brand w-nav-brand'>

@@ -7,8 +7,8 @@ import './HomeHeader.css'
 const HomeHeader = () =>{
     return(
         <div className='w-nav'>
-            <div className="ani-header ">
-                    <div className='header-title'>
+            <div className="ani-header box">
+                    <div className='header-title '>
                             🤖LLM*LLM🧑🏻‍⚖️ 
                     </div>
             </div>
