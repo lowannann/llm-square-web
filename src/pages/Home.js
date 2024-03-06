@@ -20,7 +20,7 @@ const Home = () =>{
             <div className='content-1'>
             <section className="hero">
                     <div className="content">
-                        <Card />
+                    <Card />
                     </div>
 
                 </section>

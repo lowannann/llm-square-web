@@ -10,7 +10,9 @@ const Header = ({go=[]}) =>{
             <div className="container-regular">
                 <div className='navbar-wrapper'>
                     <Link to='/' title='回到首頁' className='navbar-brand w-nav-brand'>
-                        <div className='header-title2'>🤖LLM*LLM🧑🏻‍⚖️</div>
+                        <div className='header-title2'>
+                        <div className='first-word'>🧑🏻‍⚖️llm</div>
+                        <div className='second-word'>Square</div>                         </div>
                     </Link>
                 <div  className="page-anchor">
                     {go && go.map((item)=>(

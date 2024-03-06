@@ -6,14 +6,17 @@ import './HomeHeader.css'
 
 const HomeHeader = () =>{
     return(
-        <div className='w-nav'>
-            <div className="ani-header box">
-                    <div className='header-title '>
-                            🤖LLM*LLM🧑🏻‍⚖️ 
-                    </div>
-            </div>
+        <div className='w-nav '>
+            <div className="ani-header box ">
+                <div className='header-title typewriter'>
+                    <div className='first-word'>🧑🏻‍⚖️llm</div>
+                    <div className='second-word'>Square</div>                         
+                </div>
 
-            <Navigation />
+            </div>
+            <div className='box'>
+                <Navigation />
+            </div>
 
         </div>
     )
