@@ -148,9 +148,9 @@ const AboutUs = () =>{
                             </div>
                         </div>
                         <div className='contact-info whitecolor'>
-                            <ContactInfoContent contactOffice='LOPE＠台大語言所' phone='02-8888888' email='_____@ntu.edu.tw' contact='謝舒凱 副教授'/>
-                            <ContactInfoContent contactOffice='LLNTU＠台大法學院' phone='02-8888888' email='_____@ntu.edu.tw' contact='謝舒凱 副教授'/>
-                            <ContactInfoContent contactOffice={<span>Com.Comm. Lab<br/>＠台大新聞所</span>} phone='02-8888888' email='_____@ntu.edu.tw' contact='謝舒凱 副教授'/>
+                            <ContactInfoContent contactOffice='LOPE＠台大語言所' phone='02-33664104 ext 307' email='shukaihsieh@ntu.edu.tw' contact='謝舒凱 副教授'/>
+                            <ContactInfoContent contactOffice='LLNTU＠台大法學院' phone='02-33668964' email='schhuang@ntu.edu.tw' contact='黃詩淳 教授'/>
+                            <ContactInfoContent contactOffice={<span>Com.Comm. Lab<br/>＠台大新聞所</span>} phone='02-33669867' email='jirlong@gmail.com' contact='謝吉隆 副教授'/>
                         </div>
                 </div>
                 </section>

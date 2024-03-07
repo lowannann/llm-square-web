@@ -4,9 +4,10 @@ import Header from '../components/Header';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import Footer from "../components/Footer";
+import dataCuration from "../data_curation.png"
 
 
-const Step01_second =()=>{
+const ModelTraining =()=>{
 
     return(
         <div >
@@ -18,15 +19,15 @@ const Step01_second =()=>{
                         <div className='title-area left'>
                             <h3>
                                 <strong>
-                                    階段一
+                                    
                                 </strong>
                             </h3>
-                            <h1>數據收集和預處理</h1>
+                            <h1>計畫執行規劃</h1>
                         </div>
 
                         <div className='project-tab-list'>
                         <NavLink
-                            to="/step01/first"
+                            to="/plan/data-curation"
                             className={({ isActive }) => 
                                 [
                                 ' button w-button ',
@@ -34,11 +35,11 @@ const Step01_second =()=>{
                                 ].join(' ')
                             }
                             >
-                            第一步
+                            數據收集
                         </NavLink>
 
                         <NavLink
-                            to="/step01/second"
+                            to="/plan/model-training"
                             className={({ isActive }) => 
                                 [
                                 ' button w-button ',
@@ -46,7 +47,31 @@ const Step01_second =()=>{
                                 ].join(' ')
                             }
                             >
-                            第二步
+                            模型架構與訓練
+                        </NavLink>
+
+                        <NavLink
+                            to="/plan/evaluation"
+                            className={({ isActive }) => 
+                                [
+                                ' button w-button ',
+                                isActive ? 'router-link-active' : ' w--current'
+                                ].join(' ')
+                            }
+                            >
+                            驗證與測試
+                        </NavLink>
+
+                        <NavLink
+                            to="/plan/application"
+                            className={({ isActive }) => 
+                                [
+                                ' button w-button ',
+                                isActive ? 'router-link-active' : ' w--current'
+                                ].join(' ')
+                            }
+                            >
+                            部署與應用
                         </NavLink>
                         </div>                        
                     </div>
@@ -57,12 +82,12 @@ const Step01_second =()=>{
                     <div className="horizontal-area mobile-switch">
                         <div className='text-container left'>
                             <div className='title-area left'>
-                                <h2>hihi</h2>
-                                <h3>計畫願景</h3>
+                                <h2>model architecture and training</h2>
+                                <h3>模型架構與訓練</h3>
                             </div>
-                            <p>我們的團隊，是一個結合法律學、語言學、自然語言處理的研究人員組成，幾年來參加司法院與七法法律搜尋引擎(Lawsnote)舉辦的黑客松活動獲得各種不同的獎項。</p>
+                            <p>利用收集的數據和NVIDIA的高效計算資源進行模型的訓練與優化。NVIDIA的 NeMo SDK 為生成式 AI 建立良好的安全護欄，並搭配 LangChain 工具包使用並在開發的應用程式加入限制。</p>
                         </div>
-                        <img src="https://assets-global.website-files.com/64a66a91acab043566a519f9/64afd88ec265cba5e4e3ab57_About%20Us.png" loading="lazy" srcset="https://assets-global.website-files.com/64a66a91acab043566a519f9/64afd88ec265cba5e4e3ab57_About%2520Us-p-500.png 500w, https://assets-global.website-files.com/64a66a91acab043566a519f9/64afd88ec265cba5e4e3ab57_About%20Us.png 1400w" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, 40vw" alt=" " className="featured-image"/>
+                        <img src={dataCuration} loading="lazy" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, 40vw" alt=" " className="featured-image"/>
                     </div>
                 </section>
 
@@ -76,4 +101,4 @@ const Step01_second =()=>{
         )
 }
 
-export default Step01_second;
+export default ModelTraining;

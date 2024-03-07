@@ -1,5 +1,5 @@
 import '../App.css';
-import './Step01_first.css'
+import './DataCuration.css'
 import Footer from "../components/Footer";
 import CardItem from "../components/CardItem";
 import Header from "../components/Header";
@@ -10,7 +10,7 @@ import dataCuration from '../data_curation.png'
 
 
 
-const Step01_first =()=>{
+const Evaluation =()=>{
 
     return(
         <div >
@@ -22,16 +22,16 @@ const Step01_first =()=>{
                         <div className='title-area left'>
                             <h3>
                                 <strong>
-                                    階段一
+                                 
                                 </strong>
                             </h3>
-                            <h1>數據收集和預處理</h1>
+                            <h1>計畫執行規劃</h1>
                         </div>
 
                         <div className='project-tab-list'>
 
                         <NavLink
-                            to="/step01/first"
+                            to="/plan/data-curation"
                             className={({ isActive }) => 
                                 [
                                 ' button w-button ',
@@ -39,11 +39,11 @@ const Step01_first =()=>{
                                 ].join(' ')
                             }
                             >
-                            第一步
+                            數據收集
                         </NavLink>
 
                         <NavLink
-                            to="/step01/second"
+                            to="/plan/model-training"
                             className={({ isActive }) => 
                                 [
                                 ' button w-button ',
@@ -51,9 +51,33 @@ const Step01_first =()=>{
                                 ].join(' ')
                             }
                             >
-                            第二步
+                            模型架構與訓練
                         </NavLink>
 
+
+                        <NavLink
+                            to="/plan/evaluation"
+                            className={({ isActive }) => 
+                                [
+                                ' button w-button ',
+                                isActive ? 'router-link-active' : ' w--current'
+                                ].join(' ')
+                            }
+                            >
+                            驗證與測試
+                        </NavLink>
+
+                        <NavLink
+                            to="/plan/application"
+                            className={({ isActive }) => 
+                                [
+                                ' button w-button ',
+                                isActive ? 'router-link-active' : ' w--current'
+                                ].join(' ')
+                            }
+                            >
+                            部署與應用
+                        </NavLink>
                         </div>
 
                     </div>
@@ -64,10 +88,10 @@ const Step01_first =()=>{
                     <div className="horizontal-area mobile-switch">
                         <div className='text-container left'>
                             <div className='title-area left'>
-                                <h2>Data Curation</h2>
-                                <h3>數據收集</h3>
+                                <h2>Evaluation</h2>
+                                <h3>驗證與測試</h3>
                             </div>
-                            <p>目前已經蒐集超過十年的司法院判決、判例、解釋；與持續更新的社群語料庫法律相關的貼文 (ptt/D) ，與關鍵詞與構式擷取與處理工具。</p>
+                            <p>對模型進行深入的驗證測試，並根據實際效果進行必要的調整。在任務評測部分，將以 Legal-AI 幾個常見任務作為對象，包括：司法人員與律師高考、法律資訊運用服務、事實認定與判例援引。</p>
                         </div>
                         <img src={dataCuration} loading="lazy" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, 40vw" alt=" " className="featured-image"/>
 
@@ -84,4 +108,4 @@ const Step01_first =()=>{
         )
 }
 
-export default Step01_first;
+export default Evaluation;

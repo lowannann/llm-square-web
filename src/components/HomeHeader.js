@@ -3,18 +3,40 @@ import Navigation from './Navigation';
 import { Link, NavLink } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav'
 import './HomeHeader.css'
+import { useEffect, useRef, useState } from 'react';
 
-const HomeHeader = () =>{
-    return(
+const HomeHeader = () => {
+    const stickyHeaderRef = useRef(null);
+
+    const [isFullScreen, setIsFullScreen] = useState(true);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            const triggerPoint = stickyHeaderRef.current.offsetHeight;
+
+
+            if (scrollTop <= triggerPoint) {
+                setIsFullScreen(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+
+    return (
         <div className='w-nav '>
-            <div className="ani-header box ">
+            <div className={`ani-header ${isFullScreen ? "full-screen" : ""} box`} ref={stickyHeaderRef}>
                 <div className='header-title typewriter'>
                     <div className='first-word'>🧑🏻‍⚖️llm</div>
-                    <div className='second-word'>Square</div>                         
+                    <div className='second-word'>Square</div>
                 </div>
 
             </div>
-            <div className='box'>
+            <div>
                 <Navigation />
             </div>
 

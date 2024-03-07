@@ -265,8 +265,8 @@ body {
     padding-bottom: 120px;
     display: flex;
 
-    margin: auto;
-    margin-top: calc(50vh); 
+    /* margin: auto; */
+    /* margin-top: calc(50vh);  */
 }
 
 .section-2 {
@@ -281,7 +281,7 @@ body {
 }
 
 .section-2.whitebg {
-    background-color: #C9D8B6;
+    background-color: #fff;
 }
 
 .greybg {
@@ -537,7 +537,7 @@ p{
 .card-item {
     width: 100%;
     grid-row-gap: 40px;
-    background-color: var(--white-smoke);
+    background-color: #E1F0DA;
     text-align: center;
     border-radius: 40px;
     flex-direction: column;
@@ -555,7 +555,7 @@ p{
 }
 
 .card-item-title {
-    background-color: var(--aquamarine);
+    background-color: #A5DD9B;
     text-align: center;
     border-radius: 30px;
     padding-top: 32px;
