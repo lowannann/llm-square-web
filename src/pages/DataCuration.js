@@ -7,7 +7,8 @@ import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import dataCuration from '../data_curation.png'
-
+import dataComparison from '../data_comparison.png'
+import verdict from '../verdict.png'
 
 
 const DataCuration =()=>{
@@ -22,13 +23,25 @@ const DataCuration =()=>{
                         <div className='title-area left'>
                             <h3>
                                 <strong>
-                                 
+                                 main project
                                 </strong>
                             </h3>
-                            <h1>計畫執行規劃</h1>
+                            <h1>總計畫</h1>
                         </div>
 
                         <div className='project-tab-list'>
+
+                        <NavLink
+                            to="/plan/main-project"
+                            className={({ isActive }) => 
+                                [
+                                ' button w-button ',
+                                isActive ? 'router-link-active' : ' w--current'
+                                ].join(' ')
+                            }
+                            >
+                            總計劃說明
+                        </NavLink>
 
                         <NavLink
                             to="/plan/data-curation"
@@ -92,8 +105,15 @@ const DataCuration =()=>{
                                 <h3>數據收集</h3>
                             </div>
                             <p>選擇和預處理法律文本數據。目前已經蒐集超過十年的司法院判決、判例、解釋；與持續更新的社群語料庫法律相關的貼文 (ptt/D) ，與關鍵詞與構式擷取與處理工具。</p>
+                            <div>
+                                <img src={dataComparison} />
+                                <div className='data_caption'>LLM²與其他模型使用數據之比較</div>
+                                <div><br/></div>
+                                <img src={verdict} />
+                                <div className='data_caption'>訓練資料範例：判決書</div>
+                            </div>
                         </div>
-                        <img src={dataCuration} loading="lazy" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, 40vw" alt=" " className="featured-image"/>
+                        <img src={dataCuration} />
 
                     </div>
                 </section>

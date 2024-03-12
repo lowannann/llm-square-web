@@ -22,13 +22,25 @@ const Application =()=>{
                         <div className='title-area left'>
                             <h3>
                                 <strong>
-                                 
+                                 main project
                                 </strong>
                             </h3>
-                            <h1>計畫執行規劃</h1>
+                            <h1>總計劃</h1>
                         </div>
 
                         <div className='project-tab-list'>
+
+                        <NavLink
+                            to="/plan/main-project"
+                            className={({ isActive }) => 
+                                [
+                                ' button w-button ',
+                                isActive ? 'router-link-active' : ' w--current'
+                                ].join(' ')
+                            }
+                            >
+                            總計劃說明
+                        </NavLink>
 
                         <NavLink
                             to="/plan/data-curation"

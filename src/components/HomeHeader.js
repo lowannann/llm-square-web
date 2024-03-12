@@ -4,6 +4,8 @@ import { Link, NavLink } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav'
 import './HomeHeader.css'
 import { useEffect, useRef, useState } from 'react';
+import llmLogo from './llm_logo.png';
+
 
 const HomeHeader = () => {
     const stickyHeaderRef = useRef(null);
@@ -31,7 +33,8 @@ const HomeHeader = () => {
         <div className='w-nav '>
             <div className={`ani-header ${isFullScreen ? "full-screen" : ""} box`} ref={stickyHeaderRef}>
                 <div className='header-title typewriter'>
-                    <div className='first-word'>🧑🏻‍⚖️llm</div>
+                    <img src={llmLogo}  className='logo'/>
+                    <div className='first-word'>LLM</div>
                     <div className='second-word'>Square</div>
                 </div>
 

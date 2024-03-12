@@ -33,7 +33,19 @@ const AboutUs = () =>{
                                 <h2>VISION</h2>
                                 <h3>計畫願景</h3>
                             </div>
-                            <p>我們的團隊，是一個結合法律學、語言學、自然語言處理的研究人員組成，幾年來參加司法院與七法法律搜尋引擎(Lawsnote)舉辦的黑客松活動獲得各種不同的獎項。</p>
+                            <p>我們將以台灣本土的法律資料為基礎，並在以下幾個面向進行創新與領先：
+                            <br/>
+                            <br/>
+                            • 高品質數據搜集、爬取與清理。台灣首次取得法律出版社的合作意願，提供高品質的人類撰寫（而非機器自己再生成）之期刊文章與解題內容。
+                            <br/>
+                            <br/>
+                            • 模型訓練：獲得輝達台大中心的算力支持，使得本計畫的模型訓練能夠更加快速、高效與規模化。
+                            <br/>
+                            <br/>
+                            • 模型評測以重視法律推理的申論題為主，更重視模型的可解釋性與推理能力。
+                            <br/>
+                            <br/>
+                            • 應用與介面結合知識圖譜，增強模型可解釋性，並提供更加直觀的法律諮詢與教育服務</p>
                         </div>
                         <img src={llmImage} loading="lazy" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, 40vw" alt=" " className="featured-image"/>
                     </div>
@@ -65,7 +77,7 @@ const AboutUs = () =>{
                                             } 
                                     description=''
                                     leader={<span>實驗室<br/>主持人</span>} 
-                                    leaderName='國立台灣大學語言學研究所 謝舒凱副教授' 
+                                    leaderName='國立台灣大學語言學研究所 謝舒凱教授' 
                                     coleader={<span>計畫參與<br/>學生</span>} 
                                     coleaderName = {
                                                         <span>國立台灣大學語言學研究所 <br/>國立台灣大學語言學研究所 </span>
@@ -77,6 +89,7 @@ const AboutUs = () =>{
                                                 <span>
                                                     <a href="https://llntu.github.io" target="_blank" rel="noopener noreferrer">  
                                                         台大法學院<br/>
+                                                        「法律分析實驗室 」
                                                         <br/>
                                                         <span className="small-font">Laboratory of Legal Analytics  <br/>(LLNTU) </span>
                                                     </a>
@@ -103,7 +116,7 @@ const AboutUs = () =>{
                                                 台大新聞所<br/>
                                                 「計算傳播研究室」<br/>
                                                 <span className="small-font">
-                                                    Computational Communication Lab (Com.Comm. Lab) 
+                                                    Computational Communication Lab<br/> (Com.Comm. Lab) 
                                                 </span>
                                             </a>
                                         </span>
@@ -116,6 +129,28 @@ const AboutUs = () =>{
                                                         <span>國立台灣大學新聞研究所 <br/>國立台灣大學新聞研究所 </span>
                                                     }
                                 />
+
+                                <CardItem 
+                                    title = {
+                                        <span>
+                                            <a href="https://web.ntnu.edu.tw/~hlshao/" target="_blank" rel="noopener noreferrer">  
+                                            北醫醫療暨生物科技法律所<br/>
+                                                「法律資料分析與計算中國研究室」<br/>
+                                                <span className="small-font">
+                                                    Laboratory of Computational China Studies (LCCS)
+                                                </span>
+                                            </a>
+                                        </span>
+                                    } 
+                                    description=''
+                                    leader={<span>實驗室<br/>主持人</span>} 
+                                    leaderName={<span>臺北醫學大學醫療暨生物科技法律研究所<br/>邵軒磊副教授</span> }
+                                    coleader={<span>計畫參與<br/>學生</span>} 
+                                    coleaderName = {
+                                                        <span>臺北醫學大學醫療暨生物科技法律研究所 <br/>臺北醫學大學醫療暨生物科技法律研究所 </span>
+                                                    }
+                                />
+
                             </div>
                         </div>
                     </div>

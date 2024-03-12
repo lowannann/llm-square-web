@@ -3,6 +3,7 @@ import Navigation from './Navigation';
 import { Link, NavLink } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav'
 import './Header.css';
+import llmLogo from './llm_logo.png';
 
 const Header = ({go=[]}) =>{
     return(
@@ -11,7 +12,8 @@ const Header = ({go=[]}) =>{
                 <div className='navbar-wrapper'>
                     <Link to='/' title='回到首頁' className='navbar-brand w-nav-brand'>
                         <div className='header-title2'>
-                        <div className='first-word'>🧑🏻‍⚖️llm</div>
+                        <img src={llmLogo} className='logo'/>
+                        <div className='first-word'>LLM</div>
                         <div className='second-word'>Square</div>                         </div>
                     </Link>
                 <div  className="page-anchor">

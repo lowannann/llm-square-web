@@ -851,7 +851,7 @@ px
 }
 
 .menu-open-link {
-    color: #cacaca;
+    color: #fff;
     transition: all .2s;
 }
 
@@ -891,7 +891,7 @@ px
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
-    background: #4A676A;
+    background: #99BC85;
     background-size: cover;
     background-position: center;
     z-index: 100;
@@ -1061,3 +1061,4 @@ yellow: #FFB037;
 .router-link-active {
     @apply bg-indigo-800;
   }
+

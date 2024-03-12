@@ -4,3 +4,7 @@ img {
     height: auto;
     border-radius: 40px;
   }
+
+  .data_caption {
+    text-align: center;
+  }

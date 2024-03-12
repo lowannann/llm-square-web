@@ -7,10 +7,12 @@ import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import dataCuration from '../data_curation.png'
+import dataComparison from '../data_comparison.png'
+import mainProject from '../main-project.png'
 
 
 
-const Evaluation =()=>{
+const MainProject =()=>{
 
     return(
         <div >
@@ -66,7 +68,6 @@ const Evaluation =()=>{
                             模型架構與訓練
                         </NavLink>
 
-
                         <NavLink
                             to="/plan/evaluation"
                             className={({ isActive }) => 
@@ -90,6 +91,7 @@ const Evaluation =()=>{
                             >
                             部署與應用
                         </NavLink>
+
                         </div>
 
                     </div>
@@ -100,12 +102,16 @@ const Evaluation =()=>{
                     <div className="horizontal-area mobile-switch">
                         <div className='text-container left'>
                             <div className='title-area left'>
-                                <h2>Evaluation</h2>
-                                <h3>驗證與測試</h3>
+                                <h2>Main Project Description</h2>
+                                <h3>總計劃說明</h3>
                             </div>
-                            <p>對模型進行深入的驗證測試，並根據實際效果進行必要的調整。在任務評測部分，將以 Legal-AI 幾個常見任務作為對象，包括：司法人員與律師高考、法律資訊運用服務、事實認定與判例援引。</p>
+                            <p>本計畫團隊由不同系所的研究人員所組成，包括台大語言所計算語言學實驗室 LOPE（謝舒凱）、台大法律系法律分析實驗室 Laboratory of Legal Analytics (黃詩淳)、台大新聞所計算傳播研究室 Computational Communication Lab （謝吉隆），與臺北醫學大學醫療暨生物科技法律研究所法律資料分析與計算中國研究室（邵軒磊）。</p>
+                            <div>
+                                <div><br/></div>
+                                <img src={mainProject} />
+                            </div>
                         </div>
-                        <img src={dataCuration} loading="lazy" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, 40vw" alt=" " className="featured-image"/>
+                        <img src={dataCuration} />
 
                     </div>
                 </section>
@@ -120,4 +126,4 @@ const Evaluation =()=>{
         )
 }
 
-export default Evaluation;
+export default MainProject;

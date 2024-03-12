@@ -37,7 +37,19 @@
 
 .full-screen {
   height: 100vh;
-  font-size: calc(2rem + 8vw);
+  font-size: calc(2rem + 5vw);
+}
+
+.logo {
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  object-fit: cover; /* Maintain aspect ratio and scale to fit */
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out; /* Animate size change */
+}
+
+.full-screen .logo {
+  width: calc(100px + 3vw);  /* Adjust width calculation */
+  height: calc(100px + 3vw); /* Adjust height calculation */
 }
 
 .header-title {

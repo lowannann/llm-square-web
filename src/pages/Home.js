@@ -10,7 +10,6 @@ import HomeHeader from '../components/HomeHeader';
 
 
 
-
 const Home = () => {
     return (
         <div >
@@ -36,19 +35,19 @@ const Home = () => {
                         <div className='text-container orizontal'>
                             <div className='title-area left'>
                                 <h2>
-                                    LATEST
+                                    POSTS
                                     <br />
-                                    PROJECT
+                                    Square
                                 </h2>
-                                <h3>最新跨域協作計畫</h3>
+                                <h3>文章廣場（待開發...）</h3>
                             </div>
-                            <a href="/project02/existing-projects" title="查看全部" className="button w-button">查看全部</a>
+                            <a href="/posts" title="查看全部" className="button w-button">更多文章</a>
                         </div>
                         <div className='home-project-item-list w-dyn-list'>
                             <div role="list" className="project-items w-dyn-items">
-                                <Plan imgSrc='https://www.hollywoodreporter.com/wp-content/uploads/2023/10/RAM_704c-16x9_H.jpg?w=1296' text='LOPE1' />
-                                <Plan imgSrc='https://media.cnn.com/api/v1/images/stellar/prod/230926103801-rick-morty-trailer-s7.jpg?c=16x9&q=w_800,c_fill' text='LOPE2' />
-                                <Plan imgSrc='https://pyxis.nymag.com/v1/imgs/cd8/804/e0f612fa12d17e68e3d68ccf55f93cac4f-06-rick-morty.2x.h473.w710.jpg' text='LOPE3' />
+                                <Plan imgSrc='' text='post_1' />
+                                <Plan imgSrc='' text='post_2' />
+                                <Plan imgSrc='' text='post_3' />
                             </div>
                         </div>
                     </div>

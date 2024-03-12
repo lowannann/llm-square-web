@@ -1,5 +1,5 @@
 import '../App.css';
-import './DataCuration.css'
+import './SubProjectFirst.css'
 import Footer from "../components/Footer";
 import CardItem from "../components/CardItem";
 import Header from "../components/Header";
@@ -7,10 +7,11 @@ import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import dataCuration from '../data_curation.png'
+import dataComparison from '../data_comparison.png'
+import verdict from '../verdict.png'
 
 
-
-const Evaluation =()=>{
+const SubProjectFirst =()=>{
 
     return(
         <div >
@@ -22,16 +23,16 @@ const Evaluation =()=>{
                         <div className='title-area left'>
                             <h3>
                                 <strong>
-                                 main project
+                                 sub-projects
                                 </strong>
                             </h3>
-                            <h1>總計畫</h1>
+                            <h1>子計畫</h1>
                         </div>
 
                         <div className='project-tab-list'>
 
                         <NavLink
-                            to="/plan/main-project"
+                            to="/sub-project/first"
                             className={({ isActive }) => 
                                 [
                                 ' button w-button ',
@@ -39,11 +40,11 @@ const Evaluation =()=>{
                                 ].join(' ')
                             }
                             >
-                            總計劃說明
+                            子一「微調與評測」
                         </NavLink>
 
                         <NavLink
-                            to="/plan/data-curation"
+                            to="/sub-project/second"
                             className={({ isActive }) => 
                                 [
                                 ' button w-button ',
@@ -51,11 +52,11 @@ const Evaluation =()=>{
                                 ].join(' ')
                             }
                             >
-                            數據收集
+                            子二「引用與推薦」
                         </NavLink>
 
                         <NavLink
-                            to="/plan/model-training"
+                            to="/sub-project/third"
                             className={({ isActive }) => 
                                 [
                                 ' button w-button ',
@@ -63,24 +64,11 @@ const Evaluation =()=>{
                                 ].join(' ')
                             }
                             >
-                            模型架構與訓練
-                        </NavLink>
-
-
-                        <NavLink
-                            to="/plan/evaluation"
-                            className={({ isActive }) => 
-                                [
-                                ' button w-button ',
-                                isActive ? 'router-link-active' : ' w--current'
-                                ].join(' ')
-                            }
-                            >
-                            驗證與測試
+                            子三「驗證與測試」
                         </NavLink>
 
                         <NavLink
-                            to="/plan/application"
+                            to="/sub-project/forth"
                             className={({ isActive }) => 
                                 [
                                 ' button w-button ',
@@ -88,8 +76,9 @@ const Evaluation =()=>{
                                 ].join(' ')
                             }
                             >
-                            部署與應用
+                            子四「微調應用」
                         </NavLink>
+
                         </div>
 
                     </div>
@@ -100,12 +89,31 @@ const Evaluation =()=>{
                     <div className="horizontal-area mobile-switch">
                         <div className='text-container left'>
                             <div className='title-area left'>
-                                <h2>Evaluation</h2>
-                                <h3>驗證與測試</h3>
+                                <h2>Sub-project one</h2>
+                                <h3>子計畫一（謝舒凱）：大型法律語言模型規範推理與可釋性</h3>
                             </div>
-                            <p>對模型進行深入的驗證測試，並根據實際效果進行必要的調整。在任務評測部分，將以 Legal-AI 幾個常見任務作為對象，包括：司法人員與律師高考、法律資訊運用服務、事實認定與判例援引。</p>
+                            <div>
+                                <p>🚩第一年：法律語言與推理</p>
+                                <p>法律語言是一種具有獨特特色的專業語言。使用判決書作為 LLM 訓練資料可以幫助 LLM 更好地理解和處理法律語言，但需要克服資料複雜性、法律專有名詞和術語、推理邏輯和關聯結構等挑戰。法律語言學研究可以為解決這些挑戰提供理論基礎。</p>                                
+                            </div>
+                            <div>
+                                <p>🚩第二年：法律大型語言模型推理的提示工程與工具使用模型</p>
+                                <p>
+                                    法律推理是 LLM 研究的一個重要領域。目前，LLM 在法律推理方面的能力還存在一些局限性。然而，隨著研究的深入，LLM 在法律推理方面的能力將會不斷提高。
+                                </p>
+                                <p>
+                                我們的模型將參考 Poesia et al. (2023) 提出的一種工具使用模型 (tool use model)。在工具使用模型中，LLM 學習使用工具來完成任務。在我們的模型中，規範邏輯將作為一種工具，幫助 LLM 完成法律推理任務。
+                                </p>
+                            </div>
+                            <div>
+                                <p>🚩第三年：大型法律語言模型的評測與可釋性</p>    
+                                <p>在模型訓練之後，我們將在第三年進行 LLM2 的最後評測與可釋性探究。我們將以所有子計畫
+                                    執行兩年後的數據成果為基礎（包括律師高考題目、民法學說關聯、蘊涵關係數據等），進行
+                                    LLM2 的最後評測與可釋性探究。
+                                </p>                            
+                            </div>
                         </div>
-                        <img src={dataCuration} loading="lazy" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, 40vw" alt=" " className="featured-image"/>
+                        <img src={dataCuration} />
 
                     </div>
                 </section>
@@ -120,4 +128,4 @@ const Evaluation =()=>{
         )
 }
 
-export default Evaluation;
+export default SubProjectFirst;
