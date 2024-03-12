@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../App.css'
 
 const Footer = () =>{
@@ -32,37 +33,63 @@ const Footer = () =>{
 
             <div className='footer-content'>
                 <div className='footer-block'>
-                    <a title='關於計畫團隊' href='' className='footer-link-title w-inline-block'>
+                    <Link to='/aboutus' className='footer-link-title w-inline-block'>
                         <div className='title-small'>關於計畫團隊</div>
-                    </a>
-                    <a title='計畫願景' className='footer-link'>計畫願景</a>
-                    <a title='團隊介紹' className='footer-link'>團隊介紹</a>
-                    <a title='贊助' className='footer-link'>聯絡我們</a>
-                    <a title='聯絡資訊' className='footer-link'>聯絡資訊</a>
+                    </Link>
+                    <Link to='/aboutus#vision' title='計畫願景' className='footer-link'>
+                        計畫願景
+                    </Link>
+                    <Link to='/aboutus#our_team' title='計畫願景' className='footer-link'>
+                        團隊介紹
+                    </Link>
+                    <Link to='/aboutus#sponsors' title='贊助' className='footer-link'>
+                        贊助
+                    </Link>
+                    <Link to='/aboutus#contact_info' title='聯絡資訊' className='footer-link'>
+                        聯絡資訊
+                    </Link>
                 </div>
 
                 <div className='footer-block'>
-                    <a title='總計劃' href='' className='footer-link-title w-inline-block'>
-                        <div className='title-small'>總計劃</div>
-                    </a>
-                    <a title='數據收集和預處理' className='footer-link'>數據收集和預處理</a>
-                    <a title='模型架構與訓練' className='footer-link'>模型架構與訓練</a>
-                    <a title='驗證與測試' className='footer-link'>驗證與測試</a>
-                    <a title='部署與應用' className='footer-link'>部署與應用</a>
+
+                    <Link to='/plan/main-project' title='main project' className='footer-link-title w-inline-block'>
+                    <div className='title-small'>總計劃</div>
+                    </Link>
+                      <Link to='/plan/data-curation' title='數據收集和預處理' className='footer-link'>
+                        數據收集和預處理
+                      </Link>
+                      <Link to='/plan/model-training' title='模型架構與訓練' className='footer-link'>
+                       模型架構與訓練
+                      </Link>
+                      <Link to='/plan/evaluation' title='驗證與測試' className='footer-link'>
+                       驗證與測試
+                      </Link>
+                      <Link to='/plan/application' title='部署與應用' className='footer-link'>
+                        部署與應用
+                      </Link>
+
                 </div>
 
                 <div className='footer-block'>
-                    <a title='子計劃' href='' className='footer-link-title w-inline-block'>
+                    <Link to='/sub-project/first' title='子計畫' className='footer-link-title w-inline-block'>
                         <div className='title-small'>子計劃</div>
-                    </a>
-                    <a title='子一「微調與評測」' className='footer-link'>子一「微調與評測」</a>
-                    <a title='子二「引用與推薦」' className='footer-link'>子二「引用與推薦」</a>
-                    <a title='子三「驗證與測試」' className='footer-link'>子三「驗證與測試」</a>
-                    <a title='子四「微調應用」' className='footer-link'>子四「微調應用」</a>
+                    </Link>
+                    <Link to='/sub-project/first' title='子一「微調與評測」' className='footer-link'>
+                        子一「微調與評測」
+                    </Link>
+                    <Link to='/sub-project/second' title='子二「引用與推薦」' className='footer-link'>
+                        子二「引用與推薦」
+                    </Link>
+                    <Link to='/sub-project/third' title='子三「微調應用」' className='footer-link'>
+                        子三「驗證與測試」
+                    </Link>
+                    <Link to='/sub-project/forth' title='子四「圖譜與視覺話」' className='footer-link'>
+                        子四「微調應用」
+                    </Link>
                 </div>
 
                 <div className='footer-block'>
-                    <a title='最新消息' href='' className='footer-link-title w-inline-block'>
+                    <a title='最新消息'  className='footer-link-title w-inline-block'>
                         <div className='title-small'>最新消息</div>
                     </a>
                     <a title='最新消息' className='footer-link'>最新消息</a>
